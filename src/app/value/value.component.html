@@ -1,0 +1,11 @@
+<p>
+  value works!
+  
+</p>
+<button (click)=getValues()></button>
+<div *ngIf="values">
+    <div *ngFor="let val of values">
+      <p>{{val.id}}</p>
+      <p>{{val.name}}</p>
+  </div>
+</div>
